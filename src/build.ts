@@ -4,7 +4,6 @@ import Modules from "./modules";
 
 class Build {
   raw: string
-  printRaw: boolean = true
   hugo: Hugo
   modules: Modules
   metrics: Metrics
@@ -18,9 +17,6 @@ class Build {
 
   toString(): string {
     let s = ''
-    if (this.printRaw) {
-      s += `${this.raw}\n`
-    }
     s += this.metrics.speed()
     return s
   }

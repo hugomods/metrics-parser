@@ -25,6 +25,7 @@
     "hugo-metrics-parser": "dist/index.js"
   },
   "scripts": {
+    "build": "tsc",
     "lint": "npm run lint:style && npm run lint:standard",
     "lint:prettier": "prettier **/*.html i18n/* data/* **/*.md --check",
     "lint:prettier:fix": "prettier **/*.html i18n/* data/* **/*.md -w",
