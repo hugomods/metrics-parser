@@ -1,6 +1,6 @@
-import Hugo from "./hugo";
-import Metrics from "./metrics";
-import Modules from "./modules";
+import Hugo from './hugo'
+import Metrics from './metrics'
+import Modules from './modules'
 
 class Build {
   raw: string
@@ -15,11 +15,11 @@ class Build {
     this.metrics = Metrics.parse(raw)
   }
 
-  toString(): string {
+  toString (): string {
     let s = ''
     s += this.metrics.speed()
     return s
   }
 }
 
-export default Build;
+export default Build

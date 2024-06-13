@@ -1,11 +1,15 @@
 {
+  "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
     "declaration": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "preserveConstEnums": true,
+    "strictNullChecks": true
   },
   "include": [
     "src/**/*"
-  ]
+  ],
+  "exclude": ["node_modules", "dist"]
 }

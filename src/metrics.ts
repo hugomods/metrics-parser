@@ -1,4 +1,4 @@
-import { red, green, yellow, blue } from 'console-log-colors';
+import { red, green, yellow, blue } from 'console-log-colors'
 
 class Metrics {
   pages: number = 0
@@ -9,40 +9,40 @@ class Metrics {
   aliases: number = 0
   time: number = 0
 
-  static parse(raw: string): Metrics {
+  static parse (raw: string): Metrics {
     const m = new Metrics()
-    const lines = raw.split('\n');
+    const lines = raw.split('\n')
     for (const line of lines) {
-      const item = line.split('|');
-      const name = item[0].trim();
-      if (item.length < 2 || name == '') {
-        continue;
+      const item = line.split('|')
+      const name = item[0].trim()
+      if (item.length < 2 || name === '') {
+        continue
       }
 
-      let count = 0;
+      let count = 0
       for (let i = 1; i < item.length; i++) {
-        count += parseInt(item[i]);
+        count += parseInt(item[i])
       }
 
       switch (name) {
         case 'Pages':
           m.pages = count
-          break;
+          break
         case 'Paginator pages':
           m.paginatorPages = count
-          break;
+          break
         case 'Non-page files':
           m.nonPageFiles = count
-          break;
+          break
         case 'Static files':
           m.staticFiles = count
-          break;
+          break
         case 'Processed images':
           m.processedImages = count
-          break;
+          break
         case 'Aliases':
           m.aliases = count
-          break;
+          break
       }
     }
 
@@ -54,7 +54,7 @@ class Metrics {
     return m
   }
 
-  speed(): string {
+  speed (): string {
     const totalPages = this.pages + this.paginatorPages
     const pagesWithAliases = totalPages + this.aliases
     return `${this.colorSpeed(this.time / totalPages)} ms/page
@@ -62,17 +62,17 @@ ${this.colorSpeed(this.time / pagesWithAliases)} ms/page (including aliases)
 ${this.colorSpeed(this.time / (pagesWithAliases + this.staticFiles + this.nonPageFiles + this.processedImages))} ms/file (all pages and files)`
   }
 
-  private colorSpeed(speed: number): string {
+  private colorSpeed (speed: number): string {
     if (speed > 20) {
       return red(speed)
     } else if (speed > 10) {
       return yellow(speed)
-    }else if (speed > 5) {
+    } else if (speed > 5) {
       return blue(speed)
     }
-    
+
     return green(speed)
   }
 }
 
-export default Metrics;
+export default Metrics
