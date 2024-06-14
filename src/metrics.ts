@@ -56,9 +56,9 @@ class Metrics {
 
   duration (): string {
     if (this.time > 3600 * 10e2) {
-      return `${blue(this.time / 3600 * 10e2)} h`
+      return `${blue(this.time / 3600 / 10e2)} h`
     } else if (this.time > 60 * 10e2) {
-      return `${blue(this.time / 60 * 10e2)} min`
+      return `${blue(this.time / 60 / 10e2)} min`
     }
 
     return `${blue(this.time / 10e2)} s`
