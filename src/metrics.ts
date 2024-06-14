@@ -54,11 +54,22 @@ class Metrics {
     return m
   }
 
+  duration (): string {
+    if (this.time > 3600 * 10e3) {
+      return `${this.time / 3600 * 10e3} h`
+    } else if (this.time > 60 * 10e3) {
+      return `${this.time / 60 * 10e3} min`
+    }
+
+    return `${this.time / 10e3} s`
+  }
+
   speed (): string {
     const totalPages = this.pages + this.paginatorPages
     const totalPagesAliases = totalPages + this.aliases
     const totalFiles = totalPagesAliases + this.staticFiles + this.nonPageFiles + this.processedImages
-    return `${this.colorSpeed(this.time / totalPages)} ms/page (${blue(totalPages)} pages)
+    return `${blue(this.duration())} in total
+${this.colorSpeed(this.time / totalPages)} ms/page (${blue(totalPages)} pages)
 ${this.colorSpeed(this.time / totalPagesAliases)} ms/page (${blue(totalPagesAliases)} pages, including aliases)
 ${this.colorSpeed(this.time / totalFiles)} ms/file (${blue(totalFiles)} files)`
   }
