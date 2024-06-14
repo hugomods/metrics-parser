@@ -1,4 +1,4 @@
-# Hugo metrics-parser
+# Hugo Metrics Parser
 
 A CLI tool that parses Hugo metrics, such as build speed.
 
