@@ -56,10 +56,11 @@ class Metrics {
 
   speed (): string {
     const totalPages = this.pages + this.paginatorPages
-    const pagesWithAliases = totalPages + this.aliases
-    return `${this.colorSpeed(this.time / totalPages)} ms/page
-${this.colorSpeed(this.time / pagesWithAliases)} ms/page (including aliases)
-${this.colorSpeed(this.time / (pagesWithAliases + this.staticFiles + this.nonPageFiles + this.processedImages))} ms/file (all pages and files)`
+    const totalPagesAliases = totalPages + this.aliases
+    const totalFiles = totalPagesAliases + this.staticFiles + this.nonPageFiles + this.processedImages
+    return `${this.colorSpeed(this.time / totalPages)} ms/page (${blue(totalPages)} pages)
+${this.colorSpeed(this.time / totalPagesAliases)} ms/page (${blue(totalPagesAliases)} pages, including aliases)
+${this.colorSpeed(this.time / totalFiles)} ms/file (${blue(totalFiles)} files)`
   }
 
   private colorSpeed (speed: number): string {
