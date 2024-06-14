@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.1.1...metrics-parser/v0.2.0) (2024-06-14)
+
+
+### Features ✨
+
+* print the time it took to build ([956222b](https://github.com/hugomods/metrics-parser/commit/956222b2bcad1ba7570fc938f70169b9d71fd9f3))
+
 ## [0.1.1](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.1.0...metrics-parser/v0.1.1) (2024-06-14)
 
 
