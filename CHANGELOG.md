@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.2.1...metrics-parser/v0.2.2) (2024-06-14)
+
+
+### Bug Fixes 🐞
+
+* metrics duration ([464bd0a](https://github.com/hugomods/metrics-parser/commit/464bd0a4aec4f5843af10cfd0c54256bbde25617))
+
 ## [0.2.1](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.2.0...metrics-parser/v0.2.1) (2024-06-14)
 
 
