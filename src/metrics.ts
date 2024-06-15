@@ -57,7 +57,7 @@ class Metrics {
   duration (): string {
     const h = Math.floor(this.time / (10e2 * 3600))
     const m = Math.floor(this.time / (10e2 * 60) % 60)
-    const s = (this.time / 10e2 % 60)
+    const s = (this.time / 10e2 % 60).toFixed(3)
     let v = `${green(s)}s`
 
     if (m > 0) {
