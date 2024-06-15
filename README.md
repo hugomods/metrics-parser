@@ -17,9 +17,10 @@ npm i -g @hugomods/metrics-parser
 ```sh
 hugo | hugo-metrics-parser
 ...
-9.54320987654321 ms/page
-6.871111111111111 ms/page (including aliases)
-4.294444444444444 ms/file (all pages and files)
+2m24.831s in total
+6.471781580946423 ms/page (22379 pages)
+4.478416821273965 ms/page (32340 pages, including aliases)
+4.459799846035412 ms/file (32475 files)
 ```
 
 ## Colors
