@@ -55,13 +55,19 @@ class Metrics {
   }
 
   duration (): string {
-    if (this.time > 3600 * 10e2) {
-      return `${blue(this.time / 3600 / 10e2)} h`
-    } else if (this.time > 60 * 10e2) {
-      return `${blue(this.time / 60 / 10e2)} min`
+    const h = Math.floor(this.time / (10e2 * 3600))
+    const m = Math.floor(this.time / (10e2 * 60) % 60)
+    const s = (this.time / 10e2 % 60)
+    let v = `${green(s)}s`
+
+    if (m > 0) {
+      v = `${blue(m)}m` + v
+    }
+    if (h > 0) {
+      v = `${yellow(h)}h` + v
     }
 
-    return `${blue(this.time / 10e2)} s`
+    return v
   }
 
   speed (): string {
