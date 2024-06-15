@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.1](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.3.0...metrics-parser/v0.3.1) (2024-06-15)
+
+
+### Documentation 📝
+
+* update README.md ([ceee74e](https://github.com/hugomods/metrics-parser/commit/ceee74e5d058228b93a7d2c7d9513f68f06e2bdd))
+
+
+### Bug Fixes 🐞
+
+* color the units ([348769b](https://github.com/hugomods/metrics-parser/commit/348769b47d2bbb3fb215492680e7b586ba7537a9))
+* format seconds to reserve 3 decimal points ([ad36081](https://github.com/hugomods/metrics-parser/commit/ad36081cbfab5d8f0368842a64c15a71e0f5ae5c))
+
 ## [0.3.0](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.2.2...metrics-parser/v0.3.0) (2024-06-15)
 
 
