@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.2.2...metrics-parser/v0.3.0) (2024-06-15)
+
+
+### Features ✨
+
+* display more detailed total time to include hours, mins and seconds ([f7933ce](https://github.com/hugomods/metrics-parser/commit/f7933ce92cb7b657b44127d28f33ef59499cf99c))
+
 ## [0.2.2](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.2.1...metrics-parser/v0.2.2) (2024-06-14)
 
 
