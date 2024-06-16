@@ -25,9 +25,9 @@ hugo | hugo-metrics-parser
 
 ## Colors
 
-| Color  | Description    |
-| ------ | -------------- |
-| Green  | speed <= `5ms` |
-| Blue   | speed > `5ms`  |
-| Yellow | speed < `10ms` |
-| Red    | speed < `20ms` |
+| Color  | Description     |
+| ------ | --------------- |
+| Green  | speed <= `5ms`  |
+| Blue   | speed <= `10ms` |
+| Yellow | speed <= `20ms` |
+| Red    | speed > `20ms`  |
