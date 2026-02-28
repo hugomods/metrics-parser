@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.2](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.3.1...metrics-parser/v0.3.2) (2026-02-28)
+
+
+### Bug Fixes 🐞
+
+* **deps:** update dependency commander to v13 ([4e5901e](https://github.com/hugomods/metrics-parser/commit/4e5901eb1362abbba1e7e0d3a63b95f5eac1f005))
+* **deps:** update dependency commander to v13.1.0 ([4e37dec](https://github.com/hugomods/metrics-parser/commit/4e37deccf94d202593268551594ba96708472c63))
+* **deps:** update dependency commander to v14 ([581dfe4](https://github.com/hugomods/metrics-parser/commit/581dfe49a15af94141515f1dffac276f110e6264))
+* **deps:** update dependency commander to v14.0.1 ([6416ec1](https://github.com/hugomods/metrics-parser/commit/6416ec10dfbe47228802ed8c411a891daca14123))
+
 ## [0.3.1](https://github.com/hugomods/metrics-parser/compare/metrics-parser/v0.3.0...metrics-parser/v0.3.1) (2024-06-15)
 
 
